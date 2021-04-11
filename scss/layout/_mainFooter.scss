@@ -1,0 +1,1119 @@
+#main-footer {
+  position: relative;
+  background-color: #006100;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.92);
+
+  *{
+    padding: 0;
+    margin: 0;
+  }
+
+  // footer sections
+  &>div {
+    position: relative;
+    padding-right: 136px;
+    padding-left: 136px;
+
+    // section 1: mobile section
+    &:first-child {
+      top: -50px;
+      background-color: #FFFFFF;
+
+      section {
+        width: 100%;
+        height: 517px;
+        position: relative;
+        top: 100px;
+        border-radius: 25px;
+        padding: 0 120px;
+        display: flex;
+        flex-direction: row;
+        background-image: url(../../assets/img/store-bg.svg);
+        background-size: contain;
+        background-position: center;
+        background-color: #ffffff;
+        box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+        // z-index: 5;
+
+        // image & store container
+        &>div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          // z-index: 5;
+
+          // image section
+          &:first-child {
+            width: 293px;
+            height: 488px;
+
+            img {
+              width: 293px;
+              height: 488px;
+              position: absolute;
+              bottom: 80px;
+            }
+          }
+          // store section
+          &:last-child {
+            width: 497px;
+            // margin-left: 104px;
+
+            // write ups container
+            &>div {
+              h3 {
+                font-size: 50px;
+                font-weight: 700;
+                line-height: 67px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #006100;
+              }
+              p {
+                margin: 12px 0 30px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 150%;
+                color: #605A5A;
+              }
+              // store buttons
+              p~div {
+                a {
+                  // width: 209px;
+                  height: 66px;
+                  display: inline-block;
+                  transition: filter 0.4s;
+
+                  &:hover {
+                    filter: brightness(0.8);
+                  }
+                  img {
+                    width: 209px;
+                    height: 66px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // section 2: address, useful links & email update
+    &:nth-child(2){
+      border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+      color: #FFFFFF;
+
+      section.row {
+        padding-top: 10%;
+        padding-bottom: 2.5%;
+
+        // addresss & useful links
+        &>div:first-child {
+          div.row {
+            font-size: 16px;
+            font-weight: normal;
+
+            // address
+            &>div:first-child {
+              // logo
+              &>span {
+                img {
+                  width: 102px;
+                  height: 32px;
+                }
+              }
+            }
+
+            // useful links
+            &>div:last-child {
+              &>div {
+                width: 40%;
+                padding-top: 8%;
+                padding-left: 8%;
+              }
+            }
+          }
+        }
+        // never miss an update
+        &>div:last-child {
+          ::placeholder {
+            color: #ABB3BF;
+          }
+
+          h5 {
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 32px;
+            letter-spacing: 0em;
+            color: #FFF57E;
+            margin-bottom: 2%;
+          }
+
+          h5~div {
+            width: 448px;
+            height: 60px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+
+            input, button {
+              &:focus {
+                outline: none;
+              }
+            }
+
+            input {
+              width: 85%;
+              // height: 60px;
+              border: none;
+              border-radius: 12px 0px 0 12px;
+              padding: 0 5%;
+              background: #FFFFFF;
+              font-size: 16px;
+            }
+            button {
+              width: 15%;
+              height: auto;
+              border: none;
+              border-radius: 0px 12px 12px 0px;
+              background: #6BAF02;
+              transition: filter 0.5s;
+
+              &:hover {
+                filter: brightness(0.9);
+              }
+              &:active {
+                filter: brightness(1);
+              }
+            }
+          }
+        }
+      }
+    }
+    // section 3: copyright
+    &:last-child>section {
+      padding-top: 3%;
+      padding-bottom: 6%;
+      color: #FFFFFF;
+
+      &>div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-items: center;
+
+        &>div {
+          width: 60%;
+
+          // socials
+          &:last-child {
+            width: 40%;
+            
+            span:last-child {
+              a {
+                width: fit-content;
+                margin: 3px;
+                transition: all 0.5s;
+
+                &:hover {
+                  filter: brightness(0.95);
+                }
+
+                img {
+                  width: 22.5px;
+                  height: 22.5px;
+                }
+              }
+            }
+          }
+        }
+      } 
+    }
+  }
+}
+
+// Media Query
+
+// extra extra small
+@media (max-width: 480px) {
+  #main-footer {
+    margin-top: 0px;
+    font-size: 14px;
+
+    // footer sections
+    &>div {
+      padding-right: 2%;
+      padding-left: 2%;
+  
+      // section 1: mobile section
+      &:first-child {
+        section {
+          width: 100%;
+          height: 290px;
+          top: 40px;
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          align-items: center;
+          border-radius: 3px;
+          padding: 0;
+  
+          // image & store container
+          &>div {
+            // image section
+            &:first-child {
+              display: none;
+            }
+            // store section
+            &:last-child {
+              width: 100%;
+              margin: 0;
+              padding: 2%;
+
+              // write ups container
+              &>div {
+                h3 {
+                  font-size: 30px;
+                  line-height: 40px;
+                }
+                p {
+                  margin: 12px 0 30px;
+                  font-weight: 500;
+                  font-size: 20px;
+                  line-height: 150%;
+                }
+                // store buttons
+                p~div {
+                  align-items: start;
+
+                  a {
+                    width: 150px;
+                    height: 50px;
+                    display: inline-block;
+                    margin-bottom: 4%;
+
+                    img {
+                      // width: 100%;
+                      height: 60px;
+                      margin-left: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // section 2: address, useful links & email update
+      &:nth-child(2){
+        section.row {
+          padding-top: 80px;
+
+          // addresss & useful links
+          &>div:first-child {
+            padding-bottom: 4%;
+
+            div.row {
+              font-size: 14px;
+              font-weight: normal;
+
+              // address
+              &>div:first-child {
+                margin-top: 4%;
+
+                // logo
+                &>span {
+                  &:first-child {
+                    padding-top: 4%;
+
+                    img {
+                      width: 75px;
+                      height: 30px;
+                    }
+                  }
+                  &:last-child {
+                    padding-top: 0%;
+                  }
+                }
+              }
+
+              // useful links
+              &>div:last-child {
+                &>div {
+                  width: 100%;
+                  padding-top: 5%;
+                  padding-left: 0;
+                }
+              }
+            }
+          }
+          // never miss an update
+          &>div:last-child {
+            h5 {
+              font-size: 20px;
+            }
+  
+            h5~div {
+              width: 100%;
+              height: 40px;
+              border-radius: 6px;
+    
+              input {
+                width: 85%;
+                border-radius: 6px 0px 0 6px;
+                font-size: 14px;
+              }
+              button {
+                width: 15%;
+                border: none;
+                border-radius: 0px 6px 6px 0px;
+              }
+            }
+          }
+        }
+      }
+
+      // section 3: copyright
+      &:last-child>section {
+        padding-top: 3%;
+        padding-bottom: 4%;
+  
+        &>div {
+          flex-direction: column;
+  
+          &>div {
+            width: 100% !important;
+  
+            // socials
+            &:last-child {
+              span:last-child {
+                a {
+                  width: fit-content;
+                  margin: 3px;
+  
+                  img {
+                    width: 80%;
+                  }
+                }
+              }
+            }
+          }
+        } 
+      }
+    }
+  }
+}
+
+// extra small
+@media (min-width: 480px) and (max-width: 576px) {
+  #main-footer {
+    margin-top: 10px;
+    font-size: 15px;
+
+    // footer sections
+    &>div {
+      padding-right: 2%;
+      padding-left: 2%;
+  
+      // section 1: mobile section
+      &:first-child {
+        section {
+          width: 100%;
+          height: 250px;
+          top: 50px;
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          align-items: center;
+          border-radius: 5px;
+          padding: 0;
+  
+          // image & store container
+          &>div {
+            // image section
+            &:first-child {
+              display: none;
+            }
+            // store section
+            &:last-child {
+              width: 100%;
+              margin: 0;
+              padding: 2%;
+
+              // write ups container
+              &>div {
+                h3 {
+                  font-size: 35px;
+                  line-height: 40px;
+                }
+                p {
+                  margin: 12px 0 30px;
+                  font-weight: 500;
+                  font-size: 20px;
+                  line-height: 150%;
+                }
+                // store buttons
+                p~div {
+                  width: 100%;
+                  flex-direction: row !important;
+                  justify-content: center;
+                  align-items: center;
+
+                  a {
+                    width: 45%;
+                    height: 40px;
+                    display: block;
+                    margin-bottom: 0;
+
+                    img {
+                      width: 250px;
+                      height: 50px;
+                      margin-left: -14px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // section 2: address, useful links & email update
+      &:nth-child(2){
+        section.row {
+          padding-top: 80px;
+
+          // addresss & useful links
+          &>div:first-child {
+            padding-bottom: 4%;
+
+            div.row {
+              font-size: 15px;
+              font-weight: normal;
+
+              // address
+              &>div:first-child {
+                margin-top: 4%;
+                
+                // logo
+                &>span {
+                  &:first-child {
+                    padding-top: 4%;
+
+                    img {
+                      width: 75px;
+                      height: 30px;
+                    }
+                  }
+                  &:last-child {
+                    padding-top: 0%;
+                  }
+                }
+              }
+
+              // useful links
+              &>div:last-child {
+                &>div {
+                  width: 100%;
+                  padding-top: 5%;
+                  padding-left: 0;
+                }
+              }
+            }
+          }
+          // never miss an update
+          &>div:last-child {
+            h5 {
+              font-size: 20px;
+            }
+  
+            h5~div {
+              width: 100%;
+              height: 40px;
+              border-radius: 6px;
+    
+              input {
+                width: 85%;
+                border-radius: 6px 0px 0 6px;
+                font-size: 15px;
+              }
+              button {
+                width: 15%;
+                border: none;
+                border-radius: 0px 6px 6px 0px;
+              }
+            }
+          }
+        }
+      }
+
+      // section 3: copyright
+      &:last-child>section {
+        padding-top: 3%;
+        padding-bottom: 4%;
+  
+        &>div {
+          flex-direction: column;
+  
+          &>div {
+            width: 100% !important;
+  
+            // socials
+            &:last-child {
+              span:last-child {
+                a {
+                  width: fit-content;
+                  margin: 3px;
+  
+                  img {
+                    width: 80%;
+                  }
+                }
+              }
+            }
+          }
+        } 
+      }
+    }
+  }
+}
+
+// small
+@media (min-width: 576px) and (max-width: 768px) {
+  #main-footer {
+    // margin-top: 10px;
+    // font-size: 16px;
+
+    // footer sections
+    &>div {
+      padding-right: 2%;
+      padding-left: 2%;
+  
+      // section 1: mobile section
+      &:first-child {
+        section {
+          width: 100%;
+          height: 320px;
+          top: 50px;
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          align-items: center;
+          border-radius: 5px;
+          padding: 6% 8%;
+  
+          // image & store container
+          &>div {
+            // image section
+            &:first-child {
+              width: 30%;
+  
+              img {
+                width: 45%;
+                height: 250px;
+                top: -45px;
+              }
+            }
+            // store section
+            &:last-child {
+              width: 70%;
+              margin: 0;
+              padding: 2%;
+
+              // write ups container
+              &>div {
+                h3 {
+                  font-size: 29px;
+                  line-height: 30px;
+                }
+                p {
+                  margin: 12px 0 30px;
+                  font-weight: 500;
+                  font-size: 20px;
+                  line-height: 150%;
+                }
+                // store buttons
+                p~div {
+                  width: 100%;
+                  flex-direction: row !important;
+                  justify-content: center;
+                  align-items: center;
+
+                  a {
+                    width: 70%;
+                    height: 70px;
+                    display: block;
+                    margin-bottom: 0;
+
+                    img {
+                      width: 150px;
+                      height: 65px;
+                      margin-left: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // section 2: address, useful links & email update
+      &:nth-child(2){
+        section.row {
+          padding-top: 100px;
+
+          // addresss & useful links
+          &>div:first-child {
+            padding-bottom: 3%;
+
+            div.row {
+              font-size: 16px;
+              font-weight: normal;
+
+              // address
+              &>div:first-child {
+                margin-top: 3%;
+                
+                // logo
+                &>span {
+                  &:first-child {
+                    padding-top: 3%;
+
+                    img {
+                      width: 95px;
+                      height: 30px;
+                    }
+                  }
+                  &:last-child {
+                    padding-top: 0%;
+                  }
+                }
+              }
+
+              // useful links
+              &>div:last-child {
+                &>div {
+                  width: 100%;
+                  padding-top: 4%;
+                  padding-left: 0;
+                }
+              }
+            }
+          }
+          // never miss an update
+          &>div:last-child {
+            // h5 {
+            //   // font-size: 25px;
+            // }
+  
+            h5~div {
+              width: 100%;
+              height: 40px;
+              border-radius: 6px;
+    
+              input {
+                width: 90%;
+                border-radius: 6px 0px 0 6px;
+                font-size: 16px;
+              }
+              button {
+                width: 10%;
+                border: none;
+                border-radius: 0px 6px 6px 0px;
+              }
+            }
+          }
+        }
+      }
+
+      // section 3: copyright
+      &:last-child>section {
+        padding-top: 3%;
+        padding-bottom: 4%;
+  
+        &>div {
+          flex-direction: column;
+  
+          &>div {
+            width: 100% !important;
+  
+            // socials
+            &:last-child {
+              span:last-child {
+                a {
+                  width: fit-content;
+                  margin: 3px;
+  
+                  img {
+                    width: 90%;
+                  }
+                }
+              }
+            }
+          }
+        } 
+      }
+    }
+  }
+}
+
+// medium
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-footer {
+    margin-top: 20px;
+    font-size: 15px;
+
+    // footer sections
+    &>div {
+      padding-right: 5%;
+      padding-left: 5%;
+  
+      // section 1: mobile section
+      &:first-child {
+        section {
+          height: 320px;
+          top: 50px;
+          padding: 0 38px;
+  
+          // image & store container
+          &>div {
+            // image section
+            &:first-child {
+              width: 40%;
+  
+              img {
+                width: 100%;
+                height: 300px;
+                top: -45px;
+              }
+            }
+            // store section
+            &:last-child {
+              width: 60%;
+              margin: 0;
+              padding: 2%;
+
+              // write ups container
+              &>div {
+                h3 {
+                  font-size: 35px;
+                  line-height: 40px;
+                }
+                p {
+                  margin: 12px 0 30px;
+                  font-weight: 500;
+                  font-size: 20px;
+                  line-height: 150%;
+                }
+                // store buttons
+                p~div {
+                  width: 100%;
+                  flex-direction: row !important;
+                  justify-content: center;
+                  align-items: center;
+
+                  a {
+                    width: 40%;
+                    height: 45px;
+                    display: block;
+                    margin-bottom: 0;
+
+                    img {
+                      width: 150px;
+                      height: 45px;
+                      margin-left: -3px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // section 2: address, useful links & email update
+      &:nth-child(2){
+        border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  
+        section.row {
+          padding-top: 16%;
+          padding-bottom: 2%;
+  
+          // addresss & useful links
+          &>div:first-child {
+            div.row {
+              // address
+              // &>div:first-child {}
+              
+              // useful links
+              &>div:last-child {
+                // background-color: blanchedalmond;
+  
+                &>div {
+                  width: 40%;
+                  padding-top: 5.5%;
+                }
+              }
+            }
+          }
+          // never miss an update
+          &>div:last-child {
+            margin: 4% 0 3%;
+            ::placeholder {
+              color: #ABB3BF;
+            }
+  
+            h5 {
+              font-size: 24px;
+              font-weight: 700;
+              line-height: 32px;
+              letter-spacing: 0em;
+              color: #FFF57E;
+            }
+  
+            h5~div {
+              height: 40px;
+              border-radius: 12px;
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+  
+              input, button {
+                &:focus {
+                  outline: none;
+                }
+              }
+  
+              input {
+                width: 85%;
+                width: 95%;
+                height: auto;
+                border: none;
+                border-radius: 12px 0px 0 12px;
+                padding: 0 5%;
+                background: #FFFFFF;
+                font-size: 16px;
+              }
+              button {
+                width: 15%;
+                height: auto;
+                border: none;
+                border-radius: 0px 12px 12px 0px;
+                background: #6BAF02;
+                transition: filter 0.5s;
+  
+                &:hover {
+                  filter: brightness(0.9);
+                }
+                &:active {
+                  filter: brightness(1);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // section 3: copyright
+      &:last-child>section {
+        padding-top: 2%;
+        padding-bottom: 3%;
+  
+        &>div {
+          flex-direction: column;
+          align-items: center;
+  
+          &>div {
+            width: 100% !important;
+  
+            // socials
+            &:last-child {
+              span:last-child {
+                a {
+                  margin: 4px;
+  
+                  img {
+                    width: 90%;
+                  }
+                }
+              }
+            }
+          }
+        } 
+      }
+    }
+  }
+}
+
+// large
+@media (min-width: 992px) and (max-width: 1200px) {
+  #main-footer {
+    margin-top: -20px;
+
+    // footer sections
+    &>div {
+      padding-left: 60px;
+      padding-right: 60px;
+
+      // section 1: mobile section
+      &:first-child {
+        section {
+          height: 400px;
+          padding-left: 7%;
+          padding-right: 7%;
+   
+          // image & store container
+          &>div {
+            // image section
+            &:first-child {
+              width: 40%;
+  
+              img {
+                width: 100%;
+                height: 350px;
+                top: -50px;
+              }
+            }
+            // store section
+            &:last-child {
+              width: 60%;
+
+              // write ups container
+              &>div {
+                h3 {
+                  font-size: 45px;
+                  line-height: 40px;
+                }
+                // store buttons
+                p~div {
+                  width: 100%;
+                  flex-direction: row !important;
+                  // justify-content: center;
+                  // align-items: center;
+
+                  a {
+                    width: 45%;
+                    height: 65px;
+                    display: block;
+                    margin-bottom: 0;
+
+                    img {
+                      width: 100%;
+                      height: 65px !important;
+                      // margin-left: -3px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // section 2: address, useful links & email update
+      &:nth-child(2){
+        border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  
+        section.row {
+          padding-top: 10%;
+          padding-bottom: 2%;
+  
+          // addresss & useful links
+          &>div:first-child {
+            div.row {
+              // address
+              // &>div:first-child {}
+              
+              // useful links
+              &>div:last-child {
+                &>div {
+                  width: 80%;
+                  // padding-top: 17%;
+                }
+              }
+            }
+          }
+          // never miss an update
+          &>div:last-child {
+            ::placeholder {
+              color: #ABB3BF;
+            }
+  
+            h5 {
+              font-size: 24px;
+              font-weight: 700;
+              line-height: 32px;
+              letter-spacing: 0em;
+              color: #FFF57E;
+            }
+  
+            h5~div {
+              width: 100%;
+              height: 50px;
+              border-radius: 12px;
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+
+              input, button {
+                &:focus {
+                  outline: none;
+                }
+              }
+  
+              input {
+                width: 85%;
+                height: auto;
+                border: none;
+                border-radius: 12px 0px 0 12px;
+                padding: 0 5%;
+                background: #FFFFFF;
+                font-size: 16px;
+              }
+              button {
+                width: 15%;
+                height: auto;
+                border: none;
+                border-radius: 0px 12px 12px 0px;
+                background: #6BAF02;
+                transition: filter 0.5s;
+  
+                &:hover {
+                  filter: brightness(0.9);
+                }
+                &:active {
+                  filter: brightness(1);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // section 3: copyright
+      &:last-child>section {
+        &>div {
+          flex-direction: row;
+  
+          &>div {
+            // socials
+            &:last-child {
+              span:last-child {
+                a {
+                  margin: 4px;
+  
+                  img {
+                    width: 90%;
+                  }
+                }
+              }
+            }
+          }
+        } 
+      }
+    }
+  }
+}
+
+// extra large
+@media (min-width:1200px) {}

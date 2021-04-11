@@ -1,0 +1,3231 @@
+#main-header {
+  z-index: 5;
+}
+
+#main-header nav {
+  height: 111px;
+  background-color: #006100;
+  padding: 0 136px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-header nav.support-nav * {
+  padding: 0;
+  margin: 0;
+}
+
+#main-header nav.support-nav div.external-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-header nav.support-nav div.external-icon a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-header nav.support-nav div.external-icon a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 25px;
+}
+
+#main-header nav.support-nav div.external-icon a span {
+  font-size: 20px;
+}
+
+#main-header nav div.header-logo img {
+  width: 102px;
+  height: 32px;
+}
+
+#main-header nav div.navbar-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
+}
+
+#main-header nav div.navbar-links > div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main-header nav div.navbar-links > div:first-child div {
+  margin-right: 30px;
+}
+
+#main-header nav div.navbar-links > div:first-child div a {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+#main-header nav div.navbar-links > div:first-child div a.active {
+  color: #FFF57E;
+}
+
+#main-header nav div.navbar-links > div:first-child div a:hover {
+  color: #FFF57E;
+}
+
+#main-header nav div.navbar-links > div:last-child {
+  margin-left: 40px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+}
+
+#main-header nav div.navbar-links > div:last-child button {
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+#main-header nav div.navbar-links > div:last-child button:hover {
+  background-color: #6BAF02;
+  border: none;
+}
+
+#main-header nav div.toggle-icon {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: none;
+  cursor: pointer;
+  padding: 3px;
+}
+
+#main-header nav div.toggle-icon.toggle-icon.toggled * {
+  color: #FFF57E;
+  font-size: 23px;
+}
+
+#main-header nav div.toggle-icon * {
+  color: #ffffff;
+  font-size: 23px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+@media (max-width: 480px) {
+  #main-header nav {
+    height: 60px;
+    padding: 1.5% 2%;
+  }
+  #main-header nav.support-nav div.external-icon a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0;
+  }
+  #main-header nav div.header-logo img {
+    width: 75px;
+    height: 30px;
+  }
+  #main-header nav div.navbar-links {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -1000px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    overflow: scroll;
+    z-index: -2;
+  }
+  #main-header nav div.navbar-links.sidebar {
+    min-height: 50vh;
+    position: fixed;
+    left: 0;
+    padding-top: 110px;
+    background-color: #006100;
+  }
+  #main-header nav div.navbar-links > div {
+    padding: 0 10px;
+  }
+  #main-header nav div.navbar-links > div:first-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 50px;
+  }
+  #main-header nav div.navbar-links > div:first-child div {
+    width: 100%;
+    margin-bottom: 7%;
+  }
+  #main-header nav div.navbar-links > div:first-child div a {
+    display: block;
+    padding: 2% 0;
+  }
+  #main-header nav div.navbar-links > div:first-child div a:hover {
+    background-color: #FFF57E;
+    color: #000000;
+  }
+  #main-header nav div.navbar-links > div:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0;
+    font-size: 16px;
+  }
+  #main-header nav div.navbar-links > div:last-child button {
+    width: 140px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+  #main-header nav div.toggle-icon {
+    display: block;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 576px) {
+  #main-header nav {
+    height: 80px;
+    padding: 1.5% 2%;
+  }
+  #main-header nav.support-nav div.external-icon a img {
+    width: 26px;
+    height: 26px;
+    margin-right: 0;
+  }
+  #main-header nav div.header-logo img {
+    width: 80px;
+    height: 30px;
+  }
+  #main-header nav div.navbar-links {
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -1000px;
+    padding-top: 110px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    z-index: -2;
+  }
+  #main-header nav div.navbar-links.sidebar {
+    left: 0;
+    background-color: #006100;
+  }
+  #main-header nav div.navbar-links > div {
+    width: 100%;
+    padding: 0 10px;
+  }
+  #main-header nav div.navbar-links > div:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 50px;
+  }
+  #main-header nav div.navbar-links > div:first-child div {
+    width: 100%;
+    margin-bottom: 7%;
+  }
+  #main-header nav div.navbar-links > div:first-child div a {
+    display: block;
+    padding: 2% 0;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  #main-header nav div.navbar-links > div:first-child div a:hover {
+    background-color: #FFF57E;
+    color: #000000;
+  }
+  #main-header nav div.navbar-links > div:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+  }
+  #main-header nav div.navbar-links > div:last-child button {
+    width: 135px;
+    height: 45px;
+    border-radius: 6px;
+  }
+  #main-header nav div.toggle-icon {
+    display: block;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  #main-header nav {
+    height: 80px;
+    padding: 1.5% 2%;
+  }
+  #main-header nav.support-nav div.external-icon a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+  }
+  #main-header nav div.header-logo img {
+    width: 95px;
+    height: 30px;
+  }
+  #main-header nav div.navbar-links {
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -1000px;
+    padding-top: 110px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    z-index: -2;
+  }
+  #main-header nav div.navbar-links.sidebar {
+    left: 0;
+    background-color: #006100;
+  }
+  #main-header nav div.navbar-links > div {
+    width: 100%;
+    padding: 0 10px;
+  }
+  #main-header nav div.navbar-links > div:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 50px;
+  }
+  #main-header nav div.navbar-links > div:first-child div {
+    width: 100%;
+    margin-bottom: 7%;
+  }
+  #main-header nav div.navbar-links > div:first-child div a {
+    display: block;
+    padding: 2% 0;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  #main-header nav div.navbar-links > div:first-child div a:hover {
+    background-color: #FFF57E;
+    color: #000000;
+  }
+  #main-header nav div.navbar-links > div:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+  }
+  #main-header nav div.navbar-links > div:last-child button {
+    width: 140px;
+    height: 50px;
+    border-radius: 6px;
+  }
+  #main-header nav div.toggle-icon {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-header nav {
+    height: 100px;
+    padding: 0 5%;
+  }
+  #main-header nav div.navbar-links {
+    width: 83%;
+  }
+  #main-header nav div.navbar-links > div:first-child {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #main-header nav div.navbar-links > div:first-child div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 12px;
+  }
+  #main-header nav div.navbar-links > div:last-child button {
+    width: 135px;
+    height: 45px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  #main-header nav {
+    padding: 0 60px;
+  }
+  #main-header nav div.navbar-links {
+    width: 83%;
+  }
+  #main-header nav div.navbar-links > div:first-child {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #main-header nav div.navbar-links > div:first-child div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 15px;
+  }
+  #main-header nav div.navbar-links > div:last-child button {
+    width: 132px;
+    height: 50px;
+  }
+}
+
+#main-footer {
+  position: relative;
+  background-color: #006100;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+#main-footer * {
+  padding: 0;
+  margin: 0;
+}
+
+#main-footer > div {
+  position: relative;
+  padding-right: 136px;
+  padding-left: 136px;
+}
+
+#main-footer > div:first-child {
+  top: -50px;
+  background-color: #FFFFFF;
+}
+
+#main-footer > div:first-child section {
+  width: 100%;
+  height: 517px;
+  position: relative;
+  top: 100px;
+  border-radius: 25px;
+  padding: 0 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-image: url(../../assets/img/store-bg.svg);
+  background-size: contain;
+  background-position: center;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+}
+
+#main-footer > div:first-child section > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-footer > div:first-child section > div:first-child {
+  width: 293px;
+  height: 488px;
+}
+
+#main-footer > div:first-child section > div:first-child img {
+  width: 293px;
+  height: 488px;
+  position: absolute;
+  bottom: 80px;
+}
+
+#main-footer > div:first-child section > div:last-child {
+  width: 497px;
+}
+
+#main-footer > div:first-child section > div:last-child > div h3 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #006100;
+}
+
+#main-footer > div:first-child section > div:last-child > div p {
+  margin: 12px 0 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #605A5A;
+}
+
+#main-footer > div:first-child section > div:last-child > div p ~ div a {
+  height: 66px;
+  display: inline-block;
+  -webkit-transition: -webkit-filter 0.4s;
+  transition: -webkit-filter 0.4s;
+  transition: filter 0.4s;
+  transition: filter 0.4s, -webkit-filter 0.4s;
+}
+
+#main-footer > div:first-child section > div:last-child > div p ~ div a:hover {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+#main-footer > div:first-child section > div:last-child > div p ~ div a img {
+  width: 209px;
+  height: 66px;
+}
+
+#main-footer > div:nth-child(2) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  color: #FFFFFF;
+}
+
+#main-footer > div:nth-child(2) section.row {
+  padding-top: 10%;
+  padding-bottom: 2.5%;
+}
+
+#main-footer > div:nth-child(2) section.row > div:first-child div.row {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+#main-footer > div:nth-child(2) section.row > div:first-child div.row > div:first-child > span img {
+  width: 102px;
+  height: 32px;
+}
+
+#main-footer > div:nth-child(2) section.row > div:first-child div.row > div:last-child > div {
+  width: 40%;
+  padding-top: 8%;
+  padding-left: 8%;
+}
+
+#main-footer > div:nth-child(2) section.row > div:last-child ::-webkit-input-placeholder {
+  color: #ABB3BF;
+}
+
+#main-footer > div:nth-child(2) section.row > div:last-child :-ms-input-placeholder {
+  color: #ABB3BF;
+}
+
+#main-footer > div:nth-child(2) section.row > div:last-child ::-ms-input-placeholder {
+  color: #ABB3BF;
+}
+
+#main-footer > div:nth-child(2) section.row > div:last-child ::placeholder {
+  color: #ABB3BF;
+}
+
+#main-footer > div:nth-child(2) section.row > div:last-child h5 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #FFF57E;
+  margin-bottom: 2%;
+}
+
+#main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div {
+  width: 448px;
+  height: 60px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+}
+
+#main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div input:focus, #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div button:focus {
+  outline: none;
+}
+
+#main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div input {
+  width: 85%;
+  border: none;
+  border-radius: 12px 0px 0 12px;
+  padding: 0 5%;
+  background: #FFFFFF;
+  font-size: 16px;
+}
+
+#main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div button {
+  width: 15%;
+  height: auto;
+  border: none;
+  border-radius: 0px 12px 12px 0px;
+  background: #6BAF02;
+  -webkit-transition: -webkit-filter 0.5s;
+  transition: -webkit-filter 0.5s;
+  transition: filter 0.5s;
+  transition: filter 0.5s, -webkit-filter 0.5s;
+}
+
+#main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div button:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+#main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div button:active {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+#main-footer > div:last-child > section {
+  padding-top: 3%;
+  padding-bottom: 6%;
+  color: #FFFFFF;
+}
+
+#main-footer > div:last-child > section > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+}
+
+#main-footer > div:last-child > section > div > div {
+  width: 60%;
+}
+
+#main-footer > div:last-child > section > div > div:last-child {
+  width: 40%;
+}
+
+#main-footer > div:last-child > section > div > div:last-child span:last-child a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 3px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#main-footer > div:last-child > section > div > div:last-child span:last-child a:hover {
+  -webkit-filter: brightness(0.95);
+          filter: brightness(0.95);
+}
+
+#main-footer > div:last-child > section > div > div:last-child span:last-child a img {
+  width: 22.5px;
+  height: 22.5px;
+}
+
+@media (max-width: 480px) {
+  #main-footer {
+    margin-top: 0px;
+    font-size: 14px;
+  }
+  #main-footer > div {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+  #main-footer > div:first-child section {
+    width: 100%;
+    height: 290px;
+    top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 3px;
+    padding: 0;
+  }
+  #main-footer > div:first-child section > div:first-child {
+    display: none;
+  }
+  #main-footer > div:first-child section > div:last-child {
+    width: 100%;
+    margin: 0;
+    padding: 2%;
+  }
+  #main-footer > div:first-child section > div:last-child > div h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  #main-footer > div:first-child section > div:last-child > div p {
+    margin: 12px 0 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+  }
+  #main-footer > div:first-child section > div:last-child > div p ~ div {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  #main-footer > div:first-child section > div:last-child > div p ~ div a {
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+    margin-bottom: 4%;
+  }
+  #main-footer > div:first-child section > div:last-child > div p ~ div a img {
+    height: 60px;
+    margin-left: 0;
+  }
+  #main-footer > div:nth-child(2) section.row {
+    padding-top: 80px;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child {
+    padding-bottom: 4%;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row > div:first-child {
+    margin-top: 4%;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row > div:first-child > span:first-child {
+    padding-top: 4%;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row > div:first-child > span:first-child img {
+    width: 75px;
+    height: 30px;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row > div:first-child > span:last-child {
+    padding-top: 0%;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row > div:last-child > div {
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 0;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 {
+    font-size: 20px;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div {
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div input {
+    width: 85%;
+    border-radius: 6px 0px 0 6px;
+    font-size: 14px;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div button {
+    width: 15%;
+    border: none;
+    border-radius: 0px 6px 6px 0px;
+  }
+  #main-footer > div:last-child > section {
+    padding-top: 3%;
+    padding-bottom: 4%;
+  }
+  #main-footer > div:last-child > section > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #main-footer > div:last-child > section > div > div {
+    width: 100% !important;
+  }
+  #main-footer > div:last-child > section > div > div:last-child span:last-child a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 3px;
+  }
+  #main-footer > div:last-child > section > div > div:last-child span:last-child a img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 576px) {
+  #main-footer {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  #main-footer > div {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+  #main-footer > div:first-child section {
+    width: 100%;
+    height: 250px;
+    top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 5px;
+    padding: 0;
+  }
+  #main-footer > div:first-child section > div:first-child {
+    display: none;
+  }
+  #main-footer > div:first-child section > div:last-child {
+    width: 100%;
+    margin: 0;
+    padding: 2%;
+  }
+  #main-footer > div:first-child section > div:last-child > div h3 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  #main-footer > div:first-child section > div:last-child > div p {
+    margin: 12px 0 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+  }
+  #main-footer > div:first-child section > div:last-child > div p ~ div {
+    width: 100%;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #main-footer > div:first-child section > div:last-child > div p ~ div a {
+    width: 45%;
+    height: 40px;
+    display: block;
+    margin-bottom: 0;
+  }
+  #main-footer > div:first-child section > div:last-child > div p ~ div a img {
+    width: 250px;
+    height: 50px;
+    margin-left: -14px;
+  }
+  #main-footer > div:nth-child(2) section.row {
+    padding-top: 80px;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child {
+    padding-bottom: 4%;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row {
+    font-size: 15px;
+    font-weight: normal;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row > div:first-child {
+    margin-top: 4%;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row > div:first-child > span:first-child {
+    padding-top: 4%;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row > div:first-child > span:first-child img {
+    width: 75px;
+    height: 30px;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row > div:first-child > span:last-child {
+    padding-top: 0%;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row > div:last-child > div {
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 0;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 {
+    font-size: 20px;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div {
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div input {
+    width: 85%;
+    border-radius: 6px 0px 0 6px;
+    font-size: 15px;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div button {
+    width: 15%;
+    border: none;
+    border-radius: 0px 6px 6px 0px;
+  }
+  #main-footer > div:last-child > section {
+    padding-top: 3%;
+    padding-bottom: 4%;
+  }
+  #main-footer > div:last-child > section > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #main-footer > div:last-child > section > div > div {
+    width: 100% !important;
+  }
+  #main-footer > div:last-child > section > div > div:last-child span:last-child a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 3px;
+  }
+  #main-footer > div:last-child > section > div > div:last-child span:last-child a img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  #main-footer > div {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+  #main-footer > div:first-child section {
+    width: 100%;
+    height: 320px;
+    top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 5px;
+    padding: 6% 8%;
+  }
+  #main-footer > div:first-child section > div:first-child {
+    width: 30%;
+  }
+  #main-footer > div:first-child section > div:first-child img {
+    width: 45%;
+    height: 250px;
+    top: -45px;
+  }
+  #main-footer > div:first-child section > div:last-child {
+    width: 70%;
+    margin: 0;
+    padding: 2%;
+  }
+  #main-footer > div:first-child section > div:last-child > div h3 {
+    font-size: 29px;
+    line-height: 30px;
+  }
+  #main-footer > div:first-child section > div:last-child > div p {
+    margin: 12px 0 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+  }
+  #main-footer > div:first-child section > div:last-child > div p ~ div {
+    width: 100%;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #main-footer > div:first-child section > div:last-child > div p ~ div a {
+    width: 70%;
+    height: 70px;
+    display: block;
+    margin-bottom: 0;
+  }
+  #main-footer > div:first-child section > div:last-child > div p ~ div a img {
+    width: 150px;
+    height: 65px;
+    margin-left: 0;
+  }
+  #main-footer > div:nth-child(2) section.row {
+    padding-top: 100px;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child {
+    padding-bottom: 3%;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row > div:first-child {
+    margin-top: 3%;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row > div:first-child > span:first-child {
+    padding-top: 3%;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row > div:first-child > span:first-child img {
+    width: 95px;
+    height: 30px;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row > div:first-child > span:last-child {
+    padding-top: 0%;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row > div:last-child > div {
+    width: 100%;
+    padding-top: 4%;
+    padding-left: 0;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div {
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div input {
+    width: 90%;
+    border-radius: 6px 0px 0 6px;
+    font-size: 16px;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div button {
+    width: 10%;
+    border: none;
+    border-radius: 0px 6px 6px 0px;
+  }
+  #main-footer > div:last-child > section {
+    padding-top: 3%;
+    padding-bottom: 4%;
+  }
+  #main-footer > div:last-child > section > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #main-footer > div:last-child > section > div > div {
+    width: 100% !important;
+  }
+  #main-footer > div:last-child > section > div > div:last-child span:last-child a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 3px;
+  }
+  #main-footer > div:last-child > section > div > div:last-child span:last-child a img {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-footer {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  #main-footer > div {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  #main-footer > div:first-child section {
+    height: 320px;
+    top: 50px;
+    padding: 0 38px;
+  }
+  #main-footer > div:first-child section > div:first-child {
+    width: 40%;
+  }
+  #main-footer > div:first-child section > div:first-child img {
+    width: 100%;
+    height: 300px;
+    top: -45px;
+  }
+  #main-footer > div:first-child section > div:last-child {
+    width: 60%;
+    margin: 0;
+    padding: 2%;
+  }
+  #main-footer > div:first-child section > div:last-child > div h3 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  #main-footer > div:first-child section > div:last-child > div p {
+    margin: 12px 0 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+  }
+  #main-footer > div:first-child section > div:last-child > div p ~ div {
+    width: 100%;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #main-footer > div:first-child section > div:last-child > div p ~ div a {
+    width: 40%;
+    height: 45px;
+    display: block;
+    margin-bottom: 0;
+  }
+  #main-footer > div:first-child section > div:last-child > div p ~ div a img {
+    width: 150px;
+    height: 45px;
+    margin-left: -3px;
+  }
+  #main-footer > div:nth-child(2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  #main-footer > div:nth-child(2) section.row {
+    padding-top: 16%;
+    padding-bottom: 2%;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row > div:last-child > div {
+    width: 40%;
+    padding-top: 5.5%;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child {
+    margin: 4% 0 3%;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child ::-webkit-input-placeholder {
+    color: #ABB3BF;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child :-ms-input-placeholder {
+    color: #ABB3BF;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child ::-ms-input-placeholder {
+    color: #ABB3BF;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child ::placeholder {
+    color: #ABB3BF;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    color: #FFF57E;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div {
+    height: 40px;
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div input:focus, #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div button:focus {
+    outline: none;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div input {
+    width: 85%;
+    width: 95%;
+    height: auto;
+    border: none;
+    border-radius: 12px 0px 0 12px;
+    padding: 0 5%;
+    background: #FFFFFF;
+    font-size: 16px;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div button {
+    width: 15%;
+    height: auto;
+    border: none;
+    border-radius: 0px 12px 12px 0px;
+    background: #6BAF02;
+    -webkit-transition: -webkit-filter 0.5s;
+    transition: -webkit-filter 0.5s;
+    transition: filter 0.5s;
+    transition: filter 0.5s, -webkit-filter 0.5s;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div button:hover {
+    -webkit-filter: brightness(0.9);
+            filter: brightness(0.9);
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div button:active {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+  #main-footer > div:last-child > section {
+    padding-top: 2%;
+    padding-bottom: 3%;
+  }
+  #main-footer > div:last-child > section > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #main-footer > div:last-child > section > div > div {
+    width: 100% !important;
+  }
+  #main-footer > div:last-child > section > div > div:last-child span:last-child a {
+    margin: 4px;
+  }
+  #main-footer > div:last-child > section > div > div:last-child span:last-child a img {
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  #main-footer {
+    margin-top: -20px;
+  }
+  #main-footer > div {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  #main-footer > div:first-child section {
+    height: 400px;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  #main-footer > div:first-child section > div:first-child {
+    width: 40%;
+  }
+  #main-footer > div:first-child section > div:first-child img {
+    width: 100%;
+    height: 350px;
+    top: -50px;
+  }
+  #main-footer > div:first-child section > div:last-child {
+    width: 60%;
+  }
+  #main-footer > div:first-child section > div:last-child > div h3 {
+    font-size: 45px;
+    line-height: 40px;
+  }
+  #main-footer > div:first-child section > div:last-child > div p ~ div {
+    width: 100%;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  #main-footer > div:first-child section > div:last-child > div p ~ div a {
+    width: 45%;
+    height: 65px;
+    display: block;
+    margin-bottom: 0;
+  }
+  #main-footer > div:first-child section > div:last-child > div p ~ div a img {
+    width: 100%;
+    height: 65px !important;
+  }
+  #main-footer > div:nth-child(2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  #main-footer > div:nth-child(2) section.row {
+    padding-top: 10%;
+    padding-bottom: 2%;
+  }
+  #main-footer > div:nth-child(2) section.row > div:first-child div.row > div:last-child > div {
+    width: 80%;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child ::-webkit-input-placeholder {
+    color: #ABB3BF;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child :-ms-input-placeholder {
+    color: #ABB3BF;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child ::-ms-input-placeholder {
+    color: #ABB3BF;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child ::placeholder {
+    color: #ABB3BF;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    color: #FFF57E;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div {
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div input:focus, #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div button:focus {
+    outline: none;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div input {
+    width: 85%;
+    height: auto;
+    border: none;
+    border-radius: 12px 0px 0 12px;
+    padding: 0 5%;
+    background: #FFFFFF;
+    font-size: 16px;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div button {
+    width: 15%;
+    height: auto;
+    border: none;
+    border-radius: 0px 12px 12px 0px;
+    background: #6BAF02;
+    -webkit-transition: -webkit-filter 0.5s;
+    transition: -webkit-filter 0.5s;
+    transition: filter 0.5s;
+    transition: filter 0.5s, -webkit-filter 0.5s;
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div button:hover {
+    -webkit-filter: brightness(0.9);
+            filter: brightness(0.9);
+  }
+  #main-footer > div:nth-child(2) section.row > div:last-child h5 ~ div button:active {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+  #main-footer > div:last-child > section > div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #main-footer > div:last-child > section > div > div:last-child span:last-child a {
+    margin: 4px;
+  }
+  #main-footer > div:last-child > section > div > div:last-child span:last-child a img {
+    width: 90%;
+  }
+}
+
+main.home > section {
+  padding: 0 136px;
+}
+
+main.home > section.banner {
+  background-color: #006100;
+  color: #FFFFFF;
+}
+
+main.home > section.banner > section {
+  padding-top: 31px;
+}
+
+main.home > section.banner > section.trf-the-food div.radial-img {
+  width: 500px;
+  height: 463px;
+}
+
+main.home > section.banner > section.trf-the-food div.text-and-video {
+  width: 435px;
+  height: 108px;
+  padding-top: 97px;
+  left: 136px;
+  top: 208px;
+}
+
+main.home > section.banner > section.trf-the-food div.text-and-video h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: left;
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+main.home > section.banner > section.trf-the-food div.text-and-video p {
+  width: 424px;
+  height: 60px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFF57E;
+}
+
+main.home > section.banner > section.trf-the-food div.text-and-video > div {
+  width: 86%;
+}
+
+main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child a {
+  -webkit-transition: -webkit-filter 0.6s;
+  transition: -webkit-filter 0.6s;
+  transition: filter 0.6s;
+  transition: filter 0.6s, -webkit-filter 0.6s;
+}
+
+main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child a:hover {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child a:active {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child a img {
+  width: 80px;
+  height: 80px;
+  margin-left: -6px;
+}
+
+main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child a ~ span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: start;
+}
+
+main.home > section.banner > section.key-fig {
+  padding: 53px 0 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main.home > section.banner > section.key-fig > div {
+  padding: 0 1px;
+  text-align: center;
+}
+
+main.home > section.banner > section.key-fig > div:first-child {
+  text-align: start;
+}
+
+main.home > section.banner > section.key-fig > div:last-child {
+  width: 330px;
+}
+
+main.home > section.banner > section.key-fig > div h6 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 37px;
+  letter-spacing: 0em;
+}
+
+main.home > section.banner > section.key-fig > div h6 img {
+  height: 5px;
+  float: left;
+}
+
+main.home > section.banner > section.key-fig > div span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+main.home > section.banner > section.key-fig > div span.ais-key-fig {
+  font-size: 20px;
+  text-align: start;
+}
+
+main.home > section.distribution {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-image: url("../../assets/img/home/linear_green_bg.svg");
+  background-size: contain;
+}
+
+main.home > section.distribution > div:first-child {
+  width: 561px;
+  height: 358px;
+  text-align: start;
+}
+
+main.home > section.distribution > div:first-child h3 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 1.1px;
+  color: #006100;
+}
+
+main.home > section.distribution > div:first-child p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+main.home > section.distribution > div:first-child div {
+  margin-top: 40px;
+}
+
+main.home > section.distribution > div:first-child div a {
+  width: auto;
+  height: 70px;
+  padding: 8px 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+main.home > section.distribution > div:last-child {
+  width: 424.35px;
+  height: 623px;
+  left: 855.627685546875px;
+  top: 926px;
+}
+
+main.home > section.distribution > div:last-child div img {
+  width: 100%;
+}
+
+main.home > section.integration > div:nth-child(1) {
+  font-weight: 500;
+  text-align: center;
+}
+
+main.home > section.integration > div:nth-child(1) h5 {
+  width: 1087px;
+  height: auto;
+  margin-bottom: 10px;
+  font-size: 32px;
+  line-height: 37px;
+}
+
+main.home > section.integration > div:nth-child(1) div {
+  width: 1020px;
+  height: 60px;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+main.home > section.integration > div:nth-child(2) {
+  margin-top: 73px;
+}
+
+main.home > section.integration > div:nth-child(2) * {
+  padding: 0;
+  margin: 0;
+}
+
+main.home > section.integration > div:nth-child(2) > div.img-wrap {
+  height: 448px;
+  padding: 96px 90px 126px;
+  -webkit-box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main.home > section.integration > div:nth-child(2) > div.img-wrap > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main.home > section.integration > div:nth-child(2) > div.img-wrap > span > img {
+  width: 138px;
+  height: 100%;
+  display: block;
+}
+
+main.home > section.integration > div:nth-child(2) > div.img-wrap > span > span {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+main.home > section.integration > div:nth-child(2) > div.img-wrap > span ~ img {
+  width: 30px;
+  height: 30px;
+  margin-top: 59px;
+}
+
+main.home > section.integration > div:nth-child(3) {
+  margin-top: 134px;
+}
+
+main.home > section.integration > div:nth-child(3) > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+main.home > section.integration > div:nth-child(3) > div:nth-child(2) > div:first-child {
+  padding-left: 5%;
+}
+
+main.home > section.integration > div:nth-child(3) > div > div:first-child {
+  width: 534px;
+  text-align: left;
+}
+
+main.home > section.integration > div:nth-child(3) > div > div:first-child h5 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #006100;
+}
+
+main.home > section.integration > div:nth-child(3) > div > div:first-child p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+main.home > section.integration > div:nth-child(3) > div > div:first-child > div {
+  margin-top: 30px;
+}
+
+main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:first-child {
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:last-child a {
+  color: #006100;
+  font-size: 20px;
+}
+
+main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:last-child a img {
+  width: 30px;
+  height: 30px;
+  margin-left: 3px;
+}
+
+main.home > section.integration > div:nth-child(3) > div > div:last-child {
+  width: 710px;
+  height: 410px;
+  position: relative;
+}
+
+main.home > section.integration > div:nth-child(3) > div > div:last-child img {
+  width: 700px;
+  height: 400px;
+}
+
+@media (max-width: 480px) {
+  main.home > section {
+    padding: 0 2%;
+  }
+  main.home > section.banner > section.trf-the-food div.radial-img {
+    width: 100%;
+    height: 330px;
+    padding: 0;
+  }
+  main.home > section.banner > section.trf-the-food div.radial-img img {
+    width: 460px;
+    height: 310px;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video {
+    width: 100%;
+    height: 240px;
+    padding-top: 0;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video h2 {
+    width: 100%;
+    font-size: 25px;
+    line-height: 38px;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video p {
+    width: 100%;
+    font-size: 16px;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div {
+    width: 100%;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child a img {
+    width: 60px;
+    height: 60px;
+    margin-left: -6px;
+    margin-right: 6px;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child a ~ span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: start;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div > span:last-child button {
+    width: 140px;
+    height: 50px;
+    font-size: 16px;
+  }
+  main.home > section.banner > section.key-fig {
+    width: 100%;
+    height: 290px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main.home > section.banner > section.key-fig > div {
+    width: 24.5% !important;
+    padding: 0.5%;
+    text-align: start;
+  }
+  main.home > section.banner > section.key-fig > div:first-child * {
+    font-size: 18px !important;
+  }
+  main.home > section.banner > section.key-fig > div h6 {
+    padding-top: 2px;
+    font-size: 18px;
+    line-height: 10px;
+  }
+  main.home > section.banner > section.key-fig > div h6 img {
+    width: 20px;
+  }
+  main.home > section.banner > section.key-fig > div span {
+    font-size: 15px;
+  }
+  main.home > section.distribution {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-size: cover;
+  }
+  main.home > section.distribution > div:first-child {
+    width: 100%;
+    height: 358px;
+  }
+  main.home > section.distribution > div:first-child h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+  }
+  main.home > section.distribution > div:first-child p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  main.home > section.distribution > div:first-child div {
+    margin-top: 40px;
+  }
+  main.home > section.distribution > div:first-child div button {
+    width: 150px;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  main.home > section.distribution > div:last-child {
+    width: 100%;
+    height: 400px;
+    padding: 0;
+  }
+  main.home > section.distribution > div:last-child div {
+    height: 400px;
+  }
+  main.home > section.distribution > div:last-child div img {
+    width: 80%;
+    height: 90%;
+  }
+  main.home > section.integration > div:nth-child(1) {
+    width: 100%;
+  }
+  main.home > section.integration > div:nth-child(1) h5 {
+    width: 100%;
+    font-size: 25px;
+    line-height: 25px;
+  }
+  main.home > section.integration > div:nth-child(1) div {
+    width: 95%;
+    padding: 0 5%;
+    line-height: 20px;
+    font-size: 15px;
+  }
+  main.home > section.integration > div:nth-child(3) {
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+  main.home > section.integration > div:nth-child(3) > div {
+    margin-bottom: 0;
+    padding-top: 5%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main.home > section.integration > div:nth-child(3) > div:nth-child(2) > div:first-child {
+    padding-left: 0;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child {
+    width: 95%;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child h5 {
+    font-size: 18px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child p {
+    line-height: 24px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div {
+    margin-top: 30px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:first-child {
+    margin-right: 15px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:first-child button {
+    width: 156px;
+    height: 55px;
+    font-size: 17px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:last-child a {
+    color: #006100;
+    font-size: 18px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:last-child a img {
+    width: 30px;
+    height: 30px;
+    margin-left: 3px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:last-child {
+    width: 100%;
+    height: 270px;
+    margin-top: 15%;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:last-child img:first-child {
+    width: 100%;
+    height: 250px;
+    top: 25%;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 576px) {
+  main.home > section {
+    padding: 0 2%;
+  }
+  main.home > section.banner > section.trf-the-food div.radial-img {
+    width: 100%;
+    padding: 0;
+  }
+  main.home > section.banner > section.trf-the-food div.radial-img img {
+    width: 480px;
+    height: 400px;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video {
+    width: 100%;
+    height: 240px;
+    padding-top: 0;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video h2 {
+    font-size: 25px;
+    line-height: 38px;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video p {
+    font-size: 16px;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div {
+    width: 85%;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child a img {
+    width: 60px;
+    height: 60px;
+    margin-left: -6px;
+    margin-right: 6px;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child a ~ span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: start;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div > span:last-child button {
+    width: 140px;
+    height: 50px;
+    font-size: 16px;
+  }
+  main.home > section.banner > section.key-fig {
+    width: 100%;
+    height: 280px;
+    margin-top: 0px;
+    padding-top: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main.home > section.banner > section.key-fig > div {
+    width: 24.5% !important;
+    padding: 0.5%;
+    text-align: start;
+  }
+  main.home > section.banner > section.key-fig > div:first-child * {
+    font-size: 18px !important;
+  }
+  main.home > section.banner > section.key-fig > div h6 {
+    padding-top: 2px;
+    font-size: 18px;
+    line-height: 10px;
+  }
+  main.home > section.banner > section.key-fig > div h6 img {
+    width: 20px;
+  }
+  main.home > section.banner > section.key-fig > div span {
+    font-size: 15px;
+  }
+  main.home > section.distribution {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-size: cover;
+  }
+  main.home > section.distribution > div:first-child {
+    width: 100%;
+    height: 358px;
+  }
+  main.home > section.distribution > div:first-child h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+  }
+  main.home > section.distribution > div:first-child p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  main.home > section.distribution > div:first-child div {
+    margin-top: 40px;
+  }
+  main.home > section.distribution > div:first-child div button {
+    width: 150px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  main.home > section.distribution > div:last-child {
+    width: 80%;
+    height: 400px;
+    padding: 0;
+  }
+  main.home > section.distribution > div:last-child div {
+    height: 400px;
+  }
+  main.home > section.distribution > div:last-child div img {
+    width: 70%;
+    height: 90%;
+  }
+  main.home > section.integration > div:nth-child(1) {
+    width: 100%;
+  }
+  main.home > section.integration > div:nth-child(1) h5 {
+    width: 100%;
+    font-size: 25px;
+    line-height: 25px;
+  }
+  main.home > section.integration > div:nth-child(1) div {
+    width: 95%;
+    padding: 0 5%;
+    line-height: 20px;
+    font-size: 15px;
+  }
+  main.home > section.integration > div:nth-child(3) {
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+  main.home > section.integration > div:nth-child(3) > div {
+    margin-bottom: 0;
+    padding-top: 5%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main.home > section.integration > div:nth-child(3) > div:nth-child(2) > div:first-child {
+    padding-left: 0;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child {
+    width: 95%;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child h5 {
+    font-size: 18px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child p {
+    line-height: 24px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div {
+    margin-top: 30px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:first-child {
+    margin-right: 15px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:first-child button {
+    width: 156px;
+    height: 55px;
+    font-size: 17px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:last-child a {
+    color: #006100;
+    font-size: 18px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:last-child a img {
+    width: 30px;
+    height: 30px;
+    margin-left: 3px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:last-child {
+    width: 100%;
+    height: 270px;
+    margin-top: 15%;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:last-child img:first-child {
+    width: 100%;
+    height: 250px;
+    top: 25%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  main.home > section {
+    padding: 0 2%;
+  }
+  main.home > section.banner > section.trf-the-food div.radial-img {
+    width: 100%;
+    padding: 7% 0;
+  }
+  main.home > section.banner > section.trf-the-food div.radial-img img {
+    width: 490px;
+    height: 410px;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div {
+    width: 70%;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div span button {
+    width: 140px;
+    height: 50px;
+  }
+  main.home > section.banner > section.key-fig {
+    width: 100%;
+    height: 250px;
+    margin-top: 200px;
+  }
+  main.home > section.banner > section.key-fig > div {
+    width: 160px !important;
+    padding: 0.5%;
+    text-align: center;
+  }
+  main.home > section.banner > section.key-fig > div:first-child * {
+    font-size: 18px !important;
+  }
+  main.home > section.banner > section.key-fig > div h6 {
+    padding-top: 2px;
+    font-size: 18px;
+    line-height: 10px;
+  }
+  main.home > section.banner > section.key-fig > div h6 img {
+    width: 20px;
+  }
+  main.home > section.banner > section.key-fig > div span {
+    font-size: 15px;
+  }
+  main.home > section.distribution {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-size: cover;
+  }
+  main.home > section.distribution > div:first-child {
+    width: 100%;
+    height: 358px;
+  }
+  main.home > section.distribution > div:first-child h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 43px;
+  }
+  main.home > section.distribution > div:first-child div {
+    margin-top: 40px;
+  }
+  main.home > section.distribution > div:first-child div button {
+    width: 120px;
+    height: 50px;
+    font-weight: 500;
+  }
+  main.home > section.distribution > div:last-child {
+    width: 80%;
+    height: 400px;
+    padding: 0;
+  }
+  main.home > section.distribution > div:last-child div {
+    height: 400px;
+  }
+  main.home > section.distribution > div:last-child div img {
+    width: 60%;
+    height: 100%;
+  }
+  main.home > section.integration > div:nth-child(1) {
+    width: 100%;
+  }
+  main.home > section.integration > div:nth-child(1) h5 {
+    width: 100%;
+    font-size: 27px;
+    line-height: 25px;
+  }
+  main.home > section.integration > div:nth-child(1) div {
+    width: 95%;
+    padding: 0 5%;
+    line-height: 20px;
+    font-size: 15px;
+  }
+  main.home > section.integration > div:nth-child(2) {
+    margin-top: 50px;
+  }
+  main.home > section.integration > div:nth-child(2) * {
+    padding: 0;
+    margin: 0;
+  }
+  main.home > section.integration > div:nth-child(2) > div.img-wrap {
+    width: 100%;
+    height: 250px;
+    padding: 90px 15px;
+    -webkit-box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+            box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+    border-radius: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  main.home > section.integration > div:nth-child(2) > div.img-wrap > span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main.home > section.integration > div:nth-child(2) > div.img-wrap > span > img {
+    width: 70px;
+    height: 110px;
+    display: block;
+  }
+  main.home > section.integration > div:nth-child(2) > div.img-wrap > span > span {
+    font-size: 11px;
+  }
+  main.home > section.integration > div:nth-child(2) > div.img-wrap > span ~ img {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+  }
+  main.home > section.integration > div:nth-child(3) {
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+  main.home > section.integration > div:nth-child(3) > div {
+    margin-bottom: 0;
+    padding-top: 5%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main.home > section.integration > div:nth-child(3) > div:nth-child(2) > div:first-child {
+    padding-left: 0;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child {
+    width: 95%;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child h5 {
+    font-size: 20px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child p {
+    line-height: 24px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div {
+    margin-top: 30px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:first-child {
+    margin-right: 15px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:first-child button {
+    width: 156px;
+    height: 55px;
+    font-size: 17px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:last-child a {
+    color: #006100;
+    font-size: 18px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:last-child a img {
+    width: 30px;
+    height: 30px;
+    margin-left: 3px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:last-child {
+    width: 80%;
+    height: 270px;
+    margin-top: 10%;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:last-child img:first-child {
+    width: 100%;
+    height: 270px;
+    top: 25%;
+    left: -10%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  main.home > section {
+    padding: 0 5%;
+  }
+  main.home > section.banner > section {
+    padding-top: 40px;
+  }
+  main.home > section.banner > section.trf-the-food div.radial-img {
+    width: 460px;
+    height: auto;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video {
+    width: 400px;
+    height: 108px;
+    padding-top: 40px;
+    left: 136px;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video h2 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 43px;
+    text-align: left;
+    font-style: normal;
+    color: #FFFFFF;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video p {
+    width: auto;
+    height: 46px;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div {
+    width: 82%;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child {
+    width: 280px;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child a {
+    -webkit-transition: -webkit-filter 0.6s;
+    transition: -webkit-filter 0.6s;
+    transition: filter 0.6s;
+    transition: filter 0.6s, -webkit-filter 0.6s;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child a:hover {
+    -webkit-filter: brightness(0.8);
+            filter: brightness(0.8);
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child a:active {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child a img {
+    width: 60px;
+    height: 60px;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child a ~ span {
+    font-size: 18px;
+    text-align: start;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div > span:last-child button {
+    width: 135px;
+    height: 45px;
+  }
+  main.home > section.banner > section.key-fig {
+    padding: 53px 0 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main.home > section.banner > section.key-fig > div {
+    padding: 0 1px;
+    text-align: center;
+    width: 25%;
+  }
+  main.home > section.banner > section.key-fig > div h6 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+  }
+  main.home > section.banner > section.key-fig > div h6 img {
+    height: 5px;
+    float: left;
+  }
+  main.home > section.banner > section.key-fig > div span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+  }
+  main.home > section.distribution {
+    padding-top: 120px;
+    padding-bottom: 0;
+    margin-bottom: 60px;
+    background-image: url("../../assets/img/home/linear_green_bg.svg");
+    background-size: contain;
+  }
+  main.home > section.distribution > div:first-child {
+    width: 561px;
+    height: 358px;
+    text-align: start;
+  }
+  main.home > section.distribution > div:first-child h3 {
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 1.1px;
+    color: #006100;
+  }
+  main.home > section.distribution > div:first-child div {
+    margin-top: 40px;
+  }
+  main.home > section.distribution > div:first-child div button {
+    width: 120px;
+    height: 50px;
+    font-weight: 500;
+  }
+  main.home > section.distribution > div:last-child {
+    width: 424.35px;
+    height: 550px;
+  }
+  main.home > section.distribution > div:last-child div img {
+    width: 100%;
+    height: 500px;
+  }
+  main.home > section.integration > div:nth-child(1) {
+    font-weight: 500;
+    text-align: center;
+  }
+  main.home > section.integration > div:nth-child(1) h5 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 37px;
+  }
+  main.home > section.integration > div:nth-child(1) div {
+    width: 600px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  main.home > section.integration > div:nth-child(2) {
+    margin-top: 73px;
+  }
+  main.home > section.integration > div:nth-child(2) * {
+    padding: 0;
+    margin: 0;
+  }
+  main.home > section.integration > div:nth-child(2) > div.img-wrap {
+    height: 400px;
+    padding: 90px 30px 120px;
+    -webkit-box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+            box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+    border-radius: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main.home > section.integration > div:nth-child(2) > div.img-wrap > span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main.home > section.integration > div:nth-child(2) > div.img-wrap > span > img {
+    width: 80px;
+    height: 110px;
+    display: block;
+  }
+  main.home > section.integration > div:nth-child(2) > div.img-wrap > span > span {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  main.home > section.integration > div:nth-child(2) > div.img-wrap > span ~ img {
+    width: 30px;
+    height: 30px;
+    margin-top: 59px;
+  }
+  main.home > section.integration > div:nth-child(3) {
+    margin-top: 134px;
+  }
+  main.home > section.integration > div:nth-child(3) > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  main.home > section.integration > div:nth-child(3) > div:nth-child(2) > div:first-child {
+    padding-left: 5%;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child {
+    width: 534px;
+    text-align: left;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child h5 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    color: #006100;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div {
+    margin-top: 30px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:first-child {
+    margin-right: 15px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:first-child button {
+    width: 120px;
+    height: 50px;
+    font-size: 17px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:last-child a {
+    color: #006100;
+    font-size: 18px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:last-child a img {
+    width: 30px;
+    height: 30px;
+    margin-left: 3px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:last-child {
+    width: 734px;
+    height: 341px;
+    position: relative;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:last-child img {
+    width: 100%;
+    height: 100%;
+  }
+  main.home > section.integration > div:nth-child(3) > div.consumers button {
+    width: 120px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  main.home > section {
+    padding: 0 90px;
+  }
+  main.home > section.banner > section {
+    padding-top: 30px;
+  }
+  main.home > section.banner > section.trf-the-food div.radial-img {
+    width: 450px;
+    height: 400px;
+  }
+  main.home > section.banner > section.trf-the-food div.radial-img img {
+    width: 100%;
+    height: 100%;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video {
+    width: 420px;
+    height: 108px;
+    padding-top: 97px;
+    left: 136px;
+    top: 208px;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video h2 {
+    font-size: 37px;
+    font-weight: bold;
+    line-height: 54px;
+    text-align: left;
+    font-style: normal;
+    color: #FFFFFF;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video p {
+    width: auto;
+    height: 46px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFF57E;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div {
+    width: 82%;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child a {
+    -webkit-transition: -webkit-filter 0.6s;
+    transition: -webkit-filter 0.6s;
+    transition: filter 0.6s;
+    transition: filter 0.6s, -webkit-filter 0.6s;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child a:hover {
+    -webkit-filter: brightness(0.8);
+            filter: brightness(0.8);
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child a:active {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child a img {
+    width: 70px;
+    height: 70px;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div > span:first-child a ~ span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: start;
+  }
+  main.home > section.banner > section.trf-the-food div.text-and-video > div > span:last-child button {
+    width: 132px;
+    height: 50px;
+  }
+  main.home > section.banner > section.key-fig {
+    padding: 53px 0 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main.home > section.banner > section.key-fig > div {
+    padding: 0 1px;
+    text-align: center;
+    width: 25%;
+  }
+  main.home > section.banner > section.key-fig > div h6 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0em;
+  }
+  main.home > section.banner > section.key-fig > div h6 img {
+    height: 5px;
+    float: left;
+  }
+  main.home > section.banner > section.key-fig > div span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+  }
+  main.home > section.distribution {
+    padding-top: 140px;
+    background-image: url("../../assets/img/home/linear_green_bg.svg");
+    background-size: contain;
+  }
+  main.home > section.distribution > div:first-child {
+    width: 561px;
+    height: 358px;
+    text-align: start;
+  }
+  main.home > section.distribution > div:first-child h5 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px;
+    color: #6BAF02;
+  }
+  main.home > section.distribution > div:first-child h3 {
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 1.1px;
+    color: #006100;
+  }
+  main.home > section.distribution > div:first-child div {
+    margin-top: 40px;
+  }
+  main.home > section.distribution > div:first-child div button {
+    width: 120px;
+    height: 50px;
+    font-weight: 500;
+  }
+  main.home > section.distribution > div:last-child {
+    width: 424.35px;
+    height: 550px;
+  }
+  main.home > section.distribution > div:last-child div img {
+    width: 100%;
+    height: 550px;
+  }
+  main.home > section.integration > div:nth-child(1) {
+    font-weight: 500;
+    text-align: center;
+  }
+  main.home > section.integration > div:nth-child(1) h5 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 37px;
+  }
+  main.home > section.integration > div:nth-child(1) div {
+    width: 750px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  main.home > section.integration > div:nth-child(2) {
+    margin-top: 73px;
+  }
+  main.home > section.integration > div:nth-child(2) * {
+    padding: 0;
+    margin: 0;
+  }
+  main.home > section.integration > div:nth-child(2) > div.img-wrap {
+    height: 430px;
+    padding: 90px 70px 120px;
+    -webkit-box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+            box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+    border-radius: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main.home > section.integration > div:nth-child(2) > div.img-wrap > span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main.home > section.integration > div:nth-child(2) > div.img-wrap > span > img {
+    width: 120px;
+    height: 170px;
+    display: block;
+  }
+  main.home > section.integration > div:nth-child(2) > div.img-wrap > span > span {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  main.home > section.integration > div:nth-child(2) > div.img-wrap > span ~ img {
+    width: 30px;
+    height: 30px;
+    margin-top: 59px;
+  }
+  main.home > section.integration > div:nth-child(3) {
+    margin-top: 134px;
+  }
+  main.home > section.integration > div:nth-child(3) > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0px;
+  }
+  main.home > section.integration > div:nth-child(3) > div:nth-child(2) > div:first-child {
+    padding-left: 5%;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child {
+    width: 534px;
+    text-align: left;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child h5 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    color: #006100;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div {
+    margin-top: 30px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:first-child {
+    margin-right: 15px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:first-child button {
+    width: 120px;
+    height: 50px;
+    font-size: 17px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:last-child a {
+    color: #006100;
+    font-size: 18px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:first-child > div > span:last-child a img {
+    width: 30px;
+    height: 30px;
+    margin-left: 3px;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:last-child {
+    width: 534px;
+    position: relative;
+  }
+  main.home > section.integration > div:nth-child(3) > div > div:last-child img {
+    width: 500px;
+    height: 300px;
+  }
+  main.home > section.integration > div:nth-child(3) > div.consumers button {
+    width: 120px;
+    height: 50px;
+  }
+}
+
+@font-face {
+  font-family: 'GTWalsheimProBold';
+  src: url("../assets/font/GTWalsheimPro-Medium.ttf");
+  font-style: normal;
+}
+
+#input[type="search"]::-webkit-search-cancel-button {
+  color: white;
+}
+
+body {
+  font-family: 'GTWalsheimProBold';
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#main-header .navbar-links a:hover, #main-footer a:hover {
+  color: #FFF57E;
+}
+
+section.mini-banner {
+  height: 272px;
+  padding: 98px 136px 120px;
+  background-color: #006100;
+}
+
+section.mini-banner > h3 {
+  height: 54px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 54px;
+  color: #FFFFFF;
+}
+
+section.support-help {
+  padding: 44px 136px 48px;
+  background-color: #006100;
+}
+
+section.support-help p {
+  height: 37px;
+  margin-bottom: 31px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  color: #FFFFFF;
+}
+
+section.support-help label {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  padding: 20px 16px;
+}
+
+section.support-help label img {
+  width: 20px;
+  height: 20px;
+  margin-right: 9px;
+}
+
+section.support-help label input {
+  width: 161px;
+  height: 24px;
+  border: none;
+  outline: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+section.support-help label input:focus {
+  border: transparent;
+}
+
+section.support-help label ::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+section.support-help label :-ms-input-placeholder {
+  color: #ffffff;
+}
+
+section.support-help label ::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+section.support-help label ::placeholder {
+  color: #ffffff;
+}
+
+button {
+  border-width: 0;
+  border-radius: 12px;
+  background-color: #6BAF02;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  -webkit-transition: -webkit-filter 0.5s;
+  transition: -webkit-filter 0.5s;
+  transition: filter 0.5s;
+  transition: filter 0.5s, -webkit-filter 0.5s;
+  color: #ffffff;
+}
+
+button:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+button:active {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.ais-start-btn {
+  width: 171px;
+  height: 55px;
+}
+
+button.ais-main-btn {
+  width: 156px;
+  height: 55px;
+}
+
+@media (max-width: 480px) {
+  section.mini-banner {
+    height: 100px;
+    padding: 50px 2% 20px;
+  }
+  section.mini-banner > h3 {
+    height: 54px;
+    font-size: 20px;
+    line-height: normal;
+  }
+  section.support-help {
+    padding: 44px 2% 48px;
+  }
+  section.support-help p {
+    height: auto;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  section.support-help label {
+    height: 35px;
+  }
+  section.support-help label input {
+    width: auto;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 576px) {
+  section.mini-banner {
+    height: 150px;
+    padding: 50px 2% 20px;
+  }
+  section.mini-banner > h3 {
+    height: 54px;
+    font-size: 25px;
+    line-height: normal;
+  }
+  section.support-help {
+    padding: 44px 2% 48px;
+  }
+  section.support-help p {
+    height: auto;
+    font-size: 22px;
+    line-height: 25px;
+  }
+  section.support-help label {
+    height: 40px;
+  }
+  section.support-help label input {
+    width: auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  section.mini-banner {
+    height: 200px;
+    padding: 70px 2% 20px;
+  }
+  section.mini-banner > h3 {
+    height: 54px;
+    font-size: 30px;
+    line-height: normal;
+  }
+  section.support-help {
+    padding: 44px 2% 48px;
+  }
+  section.support-help p {
+    height: auto;
+    font-size: 22px;
+    line-height: 25px;
+  }
+  section.support-help label {
+    height: 40px;
+  }
+  section.support-help label input {
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  section.mini-banner {
+    height: 200px;
+    padding: 70px 5% 20px;
+  }
+  section.mini-banner > h3 {
+    height: 54px;
+    font-size: 35px;
+    line-height: normal;
+  }
+  section.support-help {
+    padding: 44px 5% 48px;
+  }
+  section.support-help p {
+    height: auto;
+    font-size: 25px;
+    line-height: 25px;
+  }
+  section.support-help label {
+    height: 40px;
+  }
+  section.support-help label input {
+    width: auto;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  section.mini-banner {
+    padding: 70px 60px 20px;
+  }
+  section.mini-banner > h3 {
+    height: 54px;
+  }
+  section.support-help {
+    padding: 44px 60px 48px;
+  }
+  section.support-help p {
+    height: auto;
+    font-size: 32px;
+    line-height: 25px;
+  }
+  section.support-help label {
+    height: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

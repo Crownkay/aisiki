@@ -1,0 +1,188 @@
+#main-header {
+  background-color: #006100;
+  z-index: 5;
+}
+#main-header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5% 5%;
+}
+#main-header nav div.header-logo img {
+  width: 102px;
+  height: 32px;
+}
+#main-header nav div.navbar-links {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: left 0.5s;
+}
+#main-header nav div.navbar-links div:last-child a {
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 8px;
+  font-weight: 500;
+  font-size: 18px;
+}
+#main-header nav div.navbar-links div:last-child a:hover {
+  background-color: #FFF57E;
+  color: #000000;
+  border-color: #FFF57E;
+}
+#main-header nav div.navbar-links div a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+#main-header nav div.navbar-links div a.active {
+  color: #FFF57E;
+}
+#main-header nav div.navbar-links div a:hover {
+  color: #FFF57E;
+}
+#main-header nav div.toggle-icon {
+  width: fit-content;
+  display: none;
+  cursor: pointer;
+  padding: 3px;
+}
+#main-header nav div.toggle-icon.toggle-icon.toggled * {
+  color: #FFF57E;
+  font-size: 23px;
+}
+#main-header nav div.toggle-icon * {
+  color: #ffffff;
+  font-size: 23px;
+  transition: all 0.6s;
+}
+
+@media (max-width: 576px) {
+  #main-header {
+    position: relative;
+  }
+  #main-header nav {
+    padding: 1.5% 2%;
+  }
+  #main-header nav div.header-logo img {
+    width: 70px;
+    height: 32px;
+  }
+  #main-header nav div.navbar-links {
+    position: absolute;
+    top: 0;
+    left: -1000px;
+    border: 1px solid #006100;
+    padding-top: 12%;
+    padding-left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    background-color: #006100;
+    transition: all 0.6s;
+    z-index: -1;
+  }
+  #main-header nav div.navbar-links.sidebar {
+    position: fixed;
+    left: 0;
+    width: 40%;
+    height: 100vh;
+  }
+  #main-header nav div.navbar-links div {
+    width: 100%;
+    margin-bottom: 7%;
+  }
+  #main-header nav div.navbar-links div:last-child {
+    margin-top: 50px;
+    padding-left: 5px;
+  }
+  #main-header nav div.navbar-links div:last-child a {
+    width: fit-content;
+    border-radius: 6px;
+    padding: 4px;
+    font-size: 14px;
+  }
+  #main-header nav div.navbar-links div a {
+    display: block;
+    padding: 2% 3%;
+    font-size: 15px;
+    transition: all 0.6s;
+  }
+  #main-header nav div.navbar-links div a:hover {
+    background-color: #FFF57E;
+    color: #000000;
+  }
+  #main-header nav div.toggle-icon {
+    display: block;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #main-header {
+    position: relative;
+  }
+  #main-header nav {
+    padding: 1.5% 2%;
+  }
+  #main-header nav div.header-logo img {
+    width: 70px;
+    height: 32px;
+  }
+  #main-header nav div.navbar-links {
+    position: absolute;
+    top: 0px;
+    left: -1000px;
+    border: 1px solid #006100;
+    padding-top: 12%;
+    padding-left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    background-color: #006100;
+    transition: all 0.6s;
+    z-index: -1;
+  }
+  #main-header nav div.navbar-links.sidebar {
+    position: fixed;
+    left: 0;
+    width: 32%;
+    height: 100vh;
+  }
+  #main-header nav div.navbar-links div {
+    width: 100%;
+    margin-bottom: 7%;
+  }
+  #main-header nav div.navbar-links div:last-child {
+    margin-top: 50px;
+    padding-left: 13px;
+  }
+  #main-header nav div.navbar-links div:last-child a {
+    width: fit-content;
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+  #main-header nav div.navbar-links div a {
+    display: block;
+    padding: 2% 5%;
+    font-size: 15px;
+    transition: all 0.6s;
+  }
+  #main-header nav div.navbar-links div a:hover {
+    background-color: #FFF57E;
+    color: #000000;
+  }
+  #main-header nav div.toggle-icon {
+    display: block;
+  }
+}
+#main-header nav {
+  padding: 1.5% 5%;
+}
+#main-header nav div.navbar-links {
+  width: 520px;
+}
